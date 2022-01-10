@@ -29,17 +29,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <div class="navbar-nav">
-          {% if user.is_authenticated %}
-          <a class="nav-item nav-link" id="home" href="/">Home</a>
-          <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-          {% else %}
-          <a class="nav-item nav-link" id="login" href="/login">Login</a>
-          <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
-          {% endif %}
+          <a class="nav-item nav-link" id="newstudent" href="/new-student">New Student</a>
+          <a class="nav-item nav-link" id="findstudent" href="/find-student">Find Student</a>
+          <a class="nav-item nav-link" id="updatestudent" href="/update-student">Update Student</a>
+          <a class="nav-item nav-link" id="deletestudent" href="/delete-student">Delete Student</a>
+          <a class="nav-item nav-link" id="newclass" href="/new-class">New Class</a>
+          <a class="nav-item nav-link" id="deleteclass" href="/delete-class">Delete Class</a>
+          <a class="nav-item nav-link" id="addstudents" href="/add-students">Add Studentst</a>
+          <a class="nav-item nav-link" id="removestudents" href="/remove-students">Remove Students</a>
+          <a class="nav-item nav-link" id="findclass" href="/find-class">Find Class</a>
+          <a class="nav-item nav-link" id="addcredits" href="/add-credits">Add Credits</a>
+
         </div>
       </div>
     </nav>
-
+<!--
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
     messages %} {% for category, message in messages %} {% if category ==
     'error' %}
@@ -79,5 +83,6 @@
       type="text/javascript"
       src="{{ url_for('static', filename='index.js') }}"
     ></script>
+  -->
   </body>
 </html>
